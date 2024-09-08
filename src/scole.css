@@ -1,5 +1,9 @@
 body {
     background-color: #49416D;
+    background-image: url("/src/wave.svg");
+    background-position: right;
+    background-size: 250%;
+    background-repeat: no-repeat;
 }
 a{
     color: black;
@@ -51,5 +55,4 @@ img:hover {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
-  
+}
