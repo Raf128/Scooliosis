@@ -1,6 +1,6 @@
 body {
     background-color: #49416D;
-    background-image: url("/src/wave.svg");
+    background-image: url("wave.svg");
     background-position: right;
     background-size: 250%;
     background-repeat: no-repeat;
@@ -21,27 +21,34 @@ p {
     font-family: 'Courier New', Courier, monospace;
 }
 hr{
-    color:#656D41;
     width: 50%;
     text-align: left;
     margin-left: 0px;
     height: 2px;
-    background-color: #656D41;
+    animation: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 0.5s;
 }
 ::-moz-selection {
-    color: blue;
-    background: transparent;
-  }
-  
-  ::selection {
-    color: blue;
+    color: blueviolet;
     background: transparent;
 }
 
+::selection {
+    color: blueviolet;
+    background: transparent;
+}
+img {
+    border-radius: 2px;
+    border-color: #000;
+    border-style: solid;
+}
 img:hover {
     animation: shake 0.5s;
-  
     animation-iteration-count: infinite;
+    border-radius: 2px;
+    border-color: #49416D;
+    border-style: solid;
 }
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
@@ -55,4 +62,9 @@ img:hover {
     80% { transform: translate(-1px, -1px) rotate(1deg); }
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+@keyframes fade {
+    0% {color: #656D41; background-color: #656D41;}
+    50% {color: #49428A; background-color: #49428A;}
+    100% {color: #656D41; background-color: #656D41;}
 }
