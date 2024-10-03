@@ -5,8 +5,25 @@ body {
     background-size: 250%;
     background-repeat: no-repeat;
 }
+li {
+    color: #656D41;
+    font-weight: bold;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: 'Courier New', Courier, monospace;
+}
+#links {
+    border-width:2px;
+    border-style:solid;
+    border-color: #656D41;
+    border-radius: 5%;
+    padding: 10px;
+    border-width: 5px;
+    width: 500px;
+
+
+}
 a{
-    color: black;
+    color: darkgoldenrod;
     font-family: 'Courier New', Courier, monospace;
 }
 h1, h2, h3{
@@ -26,7 +43,6 @@ hr{
     margin-left: 0px;
     height: 2px;
     color: #656D41;
-    border-color: #656D41;
 }
 ::-moz-selection {
     color: blueviolet;
@@ -41,6 +57,7 @@ img {
     border-radius: 2px;
     border-color: rgb(103, 103, 89);
     border-style: solid;
+    position: absolute;
 }
 img:hover {
     animation: shake 0.5s, fade 5s;
@@ -48,6 +65,7 @@ img:hover {
     animation-iteration-count: infinite;
     border-radius: 2px;
     border-style: solid;
+    position: absolute;
 }
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
