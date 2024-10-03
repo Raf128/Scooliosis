@@ -40,14 +40,14 @@ hr{
 }
 img {
     border-radius: 2px;
-    border-color: #000;
+    border-color: rgb(103, 103, 89);
     border-style: solid;
 }
 img:hover {
-    animation: shake 0.5s;
+    animation: shake 0.5s, fade 5s;
+
     animation-iteration-count: infinite;
     border-radius: 2px;
-    border-color: #49416D;
     border-style: solid;
 }
 @keyframes shake {
@@ -64,7 +64,10 @@ img:hover {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 @keyframes fade {
-    0% {color: #656D41; background-color: #656D41;}
-    50% {color: #49428A; background-color: #49428A;}
-    100% {color: #656D41; background-color: #656D41;}
+    0% {border-color:red}
+    20% {border-color: purple;}
+    40% {border-color: blue;}
+    60% {border-color: teal;}
+    80% {border-color: green;}
+    100% {border-color: red;}
 }
