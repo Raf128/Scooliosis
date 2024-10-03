@@ -25,6 +25,7 @@ hr{
     text-align: left;
     margin-left: 0px;
     height: 2px;
+    color: #49416D;
 }
 ::-moz-selection {
     color: blueviolet;
