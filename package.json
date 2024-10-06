@@ -1,0 +1,14 @@
+{
+    "name": "Scooliosis",
+    "version": "0.3",
+    "description": "",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron ."
+    },
+    "author": "Mix",
+    "license": "None",
+    "devDependencies": {
+      "electron": "23.1.3"
+    }
+  }
