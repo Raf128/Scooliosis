@@ -1,48 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href=../src/scole.css">
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="../src/scole.css" />
     </head>
     <body>
         <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+            <p class="browsehappy">
+                You are using an <strong>outdated</strong> browser. Please
+                <a href="#">upgrade your browser</a> to improve your experience.
+            </p>
         <![endif]-->
-        
+
         <script src="" async defer></script>
     </body>
-    <link rel="icon" type="image/x-icon" href="../src/ikwya.jpg">
-    <img onclick="window.location.href = '../index.html';" height="100px" width="100px" src="../src/ikwya.jpg" style="border-radius: 20%; position: absolute; right: 4px; top: 4px">
+    <link rel="icon" type="image/x-icon" href="../src/ikwya.jpg" />
+    <img
+        onclick="window.location.href = '../index.html';"
+        height="100px"
+        width="100px"
+        src="../src/ikwya.jpg"
+        style="border-radius: 20%; position: absolute; right: 4px; top: 4px"
+    />
     <h1>Terra OS Setup</h1>
     <h2>Here things get a bit more complex...</h2>
-    <hr>
+    <hr />
     <h3>Expanding your partition</h3>
     <p>Sign in with the username terraos and pasword terraos.</p>
     <p>Once logged in, you have a few options:</p>
     <p># Expand my unnoficial way (reccomended)</p>
     <p># Expand the funny way (reccomended)</p>
     <p># Stop using Terra OS (reccomended)</p>
-    <hr>
+    <hr />
     <h3>My way</h3>
     <p>The way I like to expand is pretty simple:</p>
     <p>I boot into a linux install, and open my disk manager.</p>
     <p>Then I just select my partition and resize it to max capacity</p>
-    <hr>
+    <hr />
     <h3>The funny way</h3>
-    <p>In Terra OS, open your file explorer and go to /, search firefox and wait.</p>
+    <p>
+        In Terra OS, open your file explorer and go to /, search firefox and
+        wait.
+    </p>
     <p>Once you see a folder like /firefox/, find its path.</p>
-    <p>Open a terminal. Then run the simple command: sudo rm -r (path to firefox)</p>
-    <p>Now you should have enough room to update and install my favorite disk manager</p>
+    <p>
+        Open a terminal. Then run the simple command: sudo rm -r (path to
+        firefox)
+    </p>
+    <p>
+        Now you should have enough room to update and install my favorite disk
+        manager
+    </p>
     <p>All you gotta do is run "sudo pacman -Syu gnome-disk-utility"</p>
-    <p>After installation with (hopefully) no errors, go to your application launcher and search "disks"</p>
-    <p>Launch you application and find you usb, the find the partition directly left of the free space, right click and select resize,</p>
+    <p>
+        After installation with (hopefully) no errors, go to your application
+        launcher and search "disks"
+    </p>
+    <p>
+        Launch you application and find you usb, the find the partition directly
+        left of the free space, right click and select resize,
+    </p>
     <p>Then make it fill your desired amount of space</p>
 </html>
