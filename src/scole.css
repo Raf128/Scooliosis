@@ -55,6 +55,8 @@ hr {
     margin-left: 0px;
     height: 2px;
     color: #656d41;
+    background-color:  #656d41;
+    
 }
 ::-moz-selection {
     color: blueviolet;
