@@ -63,6 +63,7 @@ table {
     --maindark: #350f2e;
     --accent: #4e5190;
     --text: rgb(194, 222, 246);
+    --link: rgb(133, 193, 64);
 }
 .pixelify-sans-font {
     font-family: "Pixelify Sans", sans-serif;
@@ -76,18 +77,26 @@ table {
     color: var(--text);
     background-size: cover;
     background-repeat: no-repeat;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 } .menu {
     background: none;
     border: 3px solid var(--accent);
-    position: absolute;
-    z-index: 2;
+    position: relative;
     height: 50px;
     width: 99.5vw;
     background-color: var(--maindark);
     display: flex;
     flex-direction: row;
+    margin-bottom: 50px;
 } .menu > * {
     padding-left: 10px;
+    padding-right: 10px;
+    border-right: 3px solid var(--accent);
+} .menu > *:hover{
+    background: #8186e1;
+    cursor: pointer;
 } #title {
     border-right: var(--accent) solid 3px;
     background-color: var(--main);
@@ -104,4 +113,36 @@ table {
     font-size: 50px;
 } h4 {
     font-size: 25px;
+} ::selection {
+    background: none;
+    color: aqua;
+} a {
+    color: var(--link)
+} a:visited {
+    color: rgb(84, 122, 41);
 }
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, max(30vw));
+    grid-template-rows: repeat(auto-fit, max(50vh));
+    gap: 2vw;
+    padding: 2vw;
+    justify-content: center;
+  }
+  .project-card {
+    background: var(--maindark);
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: var(--text);
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    min-height: 30vh;
+    height: fit-content;
+    width: fit-content;
+  }
+  .project-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 0 50px rgb(0, 136, 255);
+  }
